@@ -31,14 +31,14 @@ client.on('ready', function() {
                 
                        
                       if (message.content.startsWith(prefix + 'setname')) {
-                      if (message.author.id !== '400329871278211073') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+                      if (message.author.id !== '453822868799750145') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
                         client.user.setUsername(argresult).then
                             message.channel.sendMessage(`**${argresult}** : تم تغير الأسم`)
                         return message.reply("**لا تستطيع تغير الأسم الا بعد ساعتين**");
                       } else
                            
                       if (message.content.startsWith(prefix + 'setavatar')) {
-                      if (message.author.id !== '400329871278211073') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+                      if (message.author.id !== '453822868799750145') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
                       client.user.setAvatar(argresult);
                           message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
                       }
